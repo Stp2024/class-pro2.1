@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d47a1" />
+    <title>College Management Portal | Student & Lecturer Dashboard</title>
+    <meta name="description" content="Comprehensive college management system with student and lecturer portals. Manage timetables, track attendance, send notifications, and organize academic activities in real-time." />
+    <meta name="keywords" content="college management, student portal, lecturer dashboard, timetable management, attendance tracking, academic portal" />
+    <meta name="author" content="College Management System" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta property="og:title" content="College Management Portal | Student & Lecturer Dashboard" />
+    <meta property="og:description" content="Comprehensive college management system with student and lecturer portals. Manage timetables, track attendance, send notifications, and organize academic activities in real-time." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="College Management Portal" />
+    <meta name="twitter:description" content="Student and lecturer portal for comprehensive college management" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js").catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
